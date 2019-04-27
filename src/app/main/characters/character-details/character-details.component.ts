@@ -15,7 +15,7 @@ import { CharactersStoreService } from '../characters-store.service';
 })
 export class CharacterDetailsComponent implements OnInit {
 
-    constructor(private charactersStore: CharactersStoreService) { }
+    constructor(public charactersStore: CharactersStoreService) { }
 
     ngOnInit() {
     }

@@ -76,15 +76,15 @@
                 </ng-container>
                 <!-- Species Column -->
                 <ng-container matColumnDef="species">
-                    <mat-header-cell *matHeaderCellDef>Species</mat-header-cell>
-                    <mat-cell *matCellDef="let character">
+                    <mat-header-cell *matHeaderCellDef fxShow fxHide.lt-sm>Species</mat-header-cell>
+                    <mat-cell *matCellDef="let character" fxShow fxHide.lt-sm>
                         <p *ngFor="let species of character.speciesRef" class="species text-truncate">{{species.name}}</p>
                     </mat-cell>
                 </ng-container>
                 <!-- Birth Year Column -->
                 <ng-container matColumnDef="birthYear">
-                    <mat-header-cell *matHeaderCellDef>Birth Year</mat-header-cell>
-                    <mat-cell *matCellDef="let character">
+                    <mat-header-cell *matHeaderCellDef fxShow fxHide.lt-md>Birth Year</mat-header-cell>
+                    <mat-cell *matCellDef="let character" fxShow fxHide.lt-md>
                         <p class="birth-year text-truncate">{{character.birth_year}}</p>
                     </mat-cell>
                 </ng-container>

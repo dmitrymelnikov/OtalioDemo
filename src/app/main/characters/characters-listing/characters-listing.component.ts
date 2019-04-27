@@ -22,7 +22,7 @@ export class CharactersListingComponent implements OnInit, OnDestroy {
     searchForm: FormGroup;
 
     constructor(
-        private charactersStore: CharactersStoreService,
+        public charactersStore: CharactersStoreService,
         private route: ActivatedRoute,
         private router: Router,
         private formBuilder: FormBuilder) {
