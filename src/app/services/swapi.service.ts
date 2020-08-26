@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
     providedIn: 'root'
 })
 export class SwapiService {
-    readonly baseUrl = 'https://swapi.co/api/';
+    readonly baseUrl = 'https://swapi.dev/api/';
 
     constructor(private http: HttpClient) { }
 
